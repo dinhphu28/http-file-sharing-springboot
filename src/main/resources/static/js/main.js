@@ -5,7 +5,7 @@ var listFilesRootElement = document.querySelector('#list-files-root-element');
 var fetchData = [];
 
 function loadListFilesFromBE() {
-    fetch("/filenames", {
+    fetch("/filesharing/filenames", {
         method: "GET"
     })
     .then(res => {
