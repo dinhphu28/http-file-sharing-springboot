@@ -78,7 +78,9 @@ public class FileStorageService {
 
         for(File file : filesList) {
             if(file.isFile()) {
-                filenames.add("" + file.getName());
+                if(file.getName().charAt(0) != '.') {
+                    filenames.add("" + file.getName());
+                }
             }
         }
 
